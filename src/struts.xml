@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+  <constant name="struts.devMode" value="true"/>
+  <package name="p1"   extends="struts-default">
+       <!--  用户登录 -->
+          <action name="userLogin" class="com.yunzhongxiaoma.action.UserAction" method="login">
+             <result name="success">/admin.jsp</result>
+             <result name="input">/login.jsp</result>
+          </action>
+          
+       <!-- 用户注册 -->
+          <action name="userRegist" class="com.yunzhongxiaoma.action.UserAction" method="regist">
+             <result name="success">/login.jsp</result>
+          </action>
+          
+  </package>
+</struts>

@@ -1,0 +1,49 @@
+/*---------------index.html(根目录）----------------*/
+.daohangbox,.main{margin:0 auto;
+		margin-top:10px;
+		border:0px #000000 solid;
+		width: 950px;
+}
+/* ----头部-------- */
+.right1{float:right;}
+/* 导航navigation */
+ul#nav{
+		width:910px; 
+		height:60px; 
+		background:#00A2CA;
+		margin:0 auto
+} 
+ul#nav li{display:inline;
+		height:60px
+} 
+ul#nav li a{display:inline-block;
+		padding:0 20px; 
+		height:60px; 
+		line-height:60px;
+ 		color:#FFF; 
+ 		font-family:"\5FAE\8F6F\96C5\9ED1"; 
+ 		font-size:16px
+ } 
+ul#nav li a:hover{background:#0095BB}/*设置鼠标滑过或悬停时变化的背景颜色*/
+
+/* -----搜索框------ */
+.search{margin:0 auto;
+		margin-right:20px;
+}
+.searchbox{background:url("../images/a.jpg")}
+
+/* -----主体----- */
+.module{border:1px #000000 solid;
+		margin:10px 30px;
+		float:left;
+}
+/* -----脚部----- */
+.footer {
+	width: 960px;
+	text-align: center; /*文本内容居中*/
+	margin: 8px auto;  /*外边距：向上8px，左右自动适应*/
+	padding-bottom: 10px;   /*下内边距10px*/
+	padding-top: 10px;  /*上内边距10px*/
+	overflow: hidden; 
+	line-height: 25px; /*行间的距离（行高）*/
+}

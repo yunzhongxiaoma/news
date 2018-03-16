@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE validation-config SYSTEM "validation-config.dtd">
+<validation-config lang="auto">
+	<form id="regthr" show-error="error" onfail="" show-type="all">
+		<field name="username" display-name="用户名" onfail="">
+			<depend name="required" />
+			<depend name="commonChar" />
+		</field>
+		<field name="pwd" display-name="密码">
+			<depend name="required" />
+			<depend name="commonChar" />
+		</field>
+		<field name="agpwd" display-name="确认密码">
+			<depend name="required" />
+			<depend name="commonChar" />
+			<depend name="equalsField" param0="pwd"/>
+		</field>
+		<field name="ch_name" display-name="姓名">
+			<depend name="required" />
+		</field>
+		<field name="qq" display-name="QQ">
+			<depend name="required" />
+			<depend name="integer" />
+		</field>
+		<field name="sex" display-name="性别">
+			<depend name="required" />
+		</field>
+		<field name="province" display-name="籍贯">
+			<depend name="required" />
+		</field>
+		<field name="nation" display-name="民族">
+			<depend name="required" />
+		</field>
+		<field name="education" display-name="教育情况">
+			<depend name="required" />
+		</field>
+		<field name="school" display-name="所在学校">
+			<depend name="required" />
+		</field>
+		<field name="subject" display-name="所学专业">
+			<depend name="required" />
+		</field>
+		<field name="mobel" display-name="手机">
+			<depend name="required" />
+		</field>
+		<field name="email" display-name="email">
+			<depend name="required" />
+			<depend name="email" />
+		</field>
+		<field name="telephone" display-name="联系电话">
+			<depend name="required" />
+		</field>
+		<field name="onesubject" display-name="最善长科目">
+			<depend name="required" />
+		</field>
+		<field name="exp_intr" display-name="自我介绍">
+			<depend name="required" />
+			<depend name="minLength" param0="20" />
+			<depend name="maxLength" param0="400" />
+		</field>
+	</form>
+
+	<form id="thrinf" show-error="error" onfail="" show-type="all">
+		<field name="qq" display-name="QQ">
+			<depend name="required" />
+			<depend name="integer" />
+		</field>
+		<field name="education" display-name="教育情况">
+			<depend name="required" />
+		</field>
+		<field name="school" display-name="所在学校">
+			<depend name="required" />
+		</field>
+		<field name="subject" display-name="所学专业">
+			<depend name="required" />
+		</field>
+		<field name="mobel" display-name="手机">
+			<depend name="required" />
+		</field>
+		<field name="email" display-name="email">
+			<depend name="required" />
+			<depend name="email" />
+		</field>
+		<field name="telephone" display-name="联系电话">
+			<depend name="required" />
+		</field>
+		<field name="onesubject" display-name="最善长科目">
+			<depend name="required" />
+		</field>
+		<field name="exp_intr" display-name="自我介绍">
+			<depend name="required" />
+			<depend name="minLength" param0="20" />
+			<depend name="maxLength" param0="400" />
+		</field>
+	</form>
+	
+	
+	<form id="regprt" show-error="error" onfail="" show-type="all">
+		<field name="username" display-name="用户名" onfail="">
+			<depend name="required" />
+			<depend name="minLength" param0="3" />
+			<depend name="maxLength" param0="40" />
+		</field>
+		<field name="pwd" display-name="密码">
+			<depend name="required" />
+		</field>
+		<field name="agpwd" display-name="确认密码">
+			<depend name="required" />
+			<depend name="equalsField" param0="pwd"/>
+		</field>
+		<field name="mobel" display-name="手机">
+			<depend name="required" />
+		</field>
+		<field name="qq" display-name="QQ">
+			<depend name="required" />
+			<depend name="integer" />
+		</field>
+		<field name="ch_name" display-name="姓名">
+			<depend name="required" />
+		</field>
+		<field name="sex" display-name="性别">
+			<depend name="required" />
+		</field>
+		<field name="email" display-name="E-mail">
+			<depend name="required" />
+			<depend name="email" />
+		</field>
+		<field name="telephone" display-name="联系电话">
+			<depend name="required" />
+		</field>
+		<field name="address" display-name="家庭住址">
+			<depend name="required" />
+		</field>
+	</form>
+
+	<form id="addstu" show-error="error" onfail="" show-type="all">
+		<field name="firname" display-name="学员贵姓" onfail="">
+			<depend name="required" />
+			<depend name="maxLength" param0="4" />
+		</field>
+		<field name="schoolgrade" display-name="所在年级">
+			<depend name="required" />
+		</field>
+		<field name="studyinf" display-name="学习情况">
+			<depend name="required" />
+		</field>
+		<field name="onesubject" display-name="辅导科目">
+			<depend name="required" />
+		</field>
+		<field name="pay" display-name="辅导工资">
+			<depend name="required" />
+			<depend name="integer" />
+		</field>
+		<field name="telephone" display-name="联系电话">
+			<depend name="required" />
+		</field>
+		<field name="address" display-name="家庭住址">
+			<depend name="required" />
+		</field>
+		<field name="threquire" display-name="教员要求及详细说明">
+			<depend name="required" />
+			<depend name="minLength" param0="20" />
+			<depend name="maxLength" param0="400" />
+		</field>
+	</form>
+
+	<form id="prtinf" show-error="error" onfail="" show-type="all">
+		<field name="mobel" display-name="手机">
+			<depend name="required" />
+		</field>
+		<field name="qq" display-name="QQ">
+			<depend name="required" />
+			<depend name="integer" />
+		</field>
+		<field name="email" display-name="E-mail">
+			<depend name="required" />
+			<depend name="email" />
+		</field>
+		<field name="telephone" display-name="联系电话">
+			<depend name="required" />
+		</field>
+		<field name="address" display-name="家庭住址">
+			<depend name="required" />
+		</field>
+	</form>
+
+	<form id="modifystu" show-error="error" onfail="" show-type="all">
+		<field name="firname" display-name="学员贵姓" onfail="">
+			<depend name="required" />
+			<depend name="maxLength" param0="4" />
+		</field>
+		<field name="schoolgrade" display-name="所在年级">
+			<depend name="required" />
+		</field>
+		<field name="studyinf" display-name="学习情况">
+			<depend name="required" />
+		</field>
+		<field name="onesubject" display-name="辅导科目">
+			<depend name="required" />
+		</field>
+		<field name="pay" display-name="辅导工资">
+			<depend name="required" />
+			<depend name="integer" />
+		</field>
+		<field name="telephone" display-name="联系电话">
+			<depend name="required" />
+		</field>
+		<field name="address" display-name="家庭住址">
+			<depend name="required" />
+		</field>
+		<field name="threquire" display-name="教员要求及详细说明">
+			<depend name="required" />
+			<depend name="minLength" param0="20" />
+			<depend name="maxLength" param0="400" />
+		</field>
+	</form>
+
+	<form id="modifypwd" show-error="error" onfail="" show-type="all">
+		<field name="oldpwd" display-name="旧密码">
+			<depend name="required" />
+		</field>
+		<field name="pwd" display-name="新密码">
+			<depend name="required" />
+		</field>
+		<field name="agpwd" display-name="确认新密码">
+			<depend name="required" />
+			<depend name="equalsField" param0="pwd"/>
+		</field>
+	
+	</form>
+	
+	<form id="login" show-error="error" onfail="" show-type="all">
+		<field name="username" display-name="用户名">
+			<depend name="required" />
+		</field>
+		<field name="pwd" display-name="密码">
+			<depend name="required" />
+		</field>
+		<field name="rote" display-name="会员类别">
+			<depend name="required" />
+		</field>
+	</form>
+	
+	<form id="addmgr" show-error="error" onfail="" show-type="all">
+		<field name="username" display-name="用户名">
+			<depend name="required" />
+		</field>
+		<field name="pwd" display-name="密码">
+			<depend name="required" />
+		</field>
+		<field name="agpwd" display-name="确认密码">
+			<depend name="required" />
+			<depend name="equalsField" param0="pwd"/>
+		</field>
+	</form>
+</validation-config>
